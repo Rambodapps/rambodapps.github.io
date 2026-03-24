@@ -3,61 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rambod Financial | Contact Us</title>
+    <title>Rambod Financial | Smart Utility Apps</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root { --primary: #2563eb; --bg: #f8fafc; --text: #1e293b; --card: #ffffff; }
-        body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: var(--text); margin: 0; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: var(--text); margin: 0; line-height: 1.6; }
         .container { max-width: 900px; margin: auto; padding: 40px 20px; }
-        header { text-align: center; margin-bottom: 40px; }
-        h1 { color: var(--primary); font-weight: 600; }
         
-        /* Contact Form Styles */
-        .contact-section { background: var(--card); padding: 40px; border-radius: 16px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); border: 1px solid #e2e8f0; margin-top: 30px; }
+        header { text-align: center; margin-bottom: 60px; }
+        h1 { font-size: 2.5rem; font-weight: 600; color: var(--primary); margin-bottom: 10px; }
+        .subtitle { font-size: 1.1rem; color: #64748b; }
+
+        /* App Cards Section */
+        .section-title { font-weight: 600; font-size: 1.5rem; margin-bottom: 25px; border-bottom: 2px solid #e2e8f0; display: inline-block; }
+        .app-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-bottom: 80px; }
+        .card { background: var(--card); padding: 30px; border-radius: 16px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); border: 1px solid #e2e8f0; }
+        .card h3 { margin-top: 0; color: var(--primary); }
+        .badge { display: inline-block; background: #dbeafe; color: #1e40af; padding: 4px 12px; border-radius: 99px; font-size: 0.75rem; font-weight: 600; margin-bottom: 10px; }
+
+        /* Contact Form Section */
+        .contact-section { background: var(--card); padding: 40px; border-radius: 16px; box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1); border: 1px solid #e2e8f0; }
         .form-group { margin-bottom: 20px; }
         label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 0.9rem; }
         input, textarea { width: 100%; padding: 12px; border: 1px solid #e2e8f0; border-radius: 8px; font-family: inherit; box-sizing: border-box; }
-        button { background: var(--primary); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-weight: 600; cursor: pointer; transition: opacity 0.2s; }
+        button { background: var(--primary); color: white; border: none; padding: 14px 28px; border-radius: 8px; font-weight: 600; cursor: pointer; width: 100%; font-size: 1rem; }
         button:hover { opacity: 0.9; }
 
-        footer { text-align: center; padding: 40px; border-top: 1px solid #e2e8f0; margin-top: 50px; }
+        footer { text-align: center; padding: 60px 20px; border-top: 1px solid #e2e8f0; margin-top: 80px; background: white; }
         .links a { color: #64748b; text-decoration: none; margin: 0 15px; font-size: 0.9rem; }
+        .links a:hover { color: var(--primary); }
     </style>
 </head>
 <body>
 
     <div class="container">
         <header>
-            <h1>Contact Rambod Financial</h1>
-            <p>Have questions about our apps? Send us a message below.</p>
+            <h1>Rambod Financial</h1>
+            <p class="subtitle">Precision-engineered financial tools for Canada & USA.</p>
         </header>
 
+        <div class="section-title">Our Applications</div>
+        <div class="app-grid">
+            <div class="card">
+                <span class="badge">In Development</span>
+                <h3>Smart Tax Canada</h3>
+                <p>Calculate your 2026 T1 returns and optimize your deductions with our localized Ottawa tax engine.</p>
+            </div>
+            <div class="card">
+                <span class="badge">Planning</span>
+                <h3>Mortgage Pro</h3>
+                <p>Advanced Canadian mortgage calculator featuring CMHC insurance logic and semi-annual compounding.</p>
+            </div>
+        </div>
+
+        <div class="section-title">Contact Us</div>
         <div class="contact-section">
-            <form action="https://formspree.io/f/your-id" method="POST">
+            <p style="margin-top: 0; color: #64748b;">Have a feature request or need support? Send us a message.</p>
+            <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
                 <div class="form-group">
-                    <label>Your Name</label>
-                    <input type="text" name="name" placeholder="Full Name" required>
+                    <label>Full Name</label>
+                    <input type="text" name="name" placeholder="Enter your name" required>
                 </div>
                 <div class="form-group">
-                    <label>Your Email</label>
-                    <input type="email" name="_replyto" placeholder="email@example.com" required>
+                    <label>Email Address</label>
+                    <input type="email" name="email" placeholder="email@example.com" required>
                 </div>
                 <div class="form-group">
                     <label>Message</label>
-                    <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
+                    <textarea name="message" rows="4" placeholder="How can we help you?" required></textarea>
                 </div>
-                <button type="submit">Send Message</button>
+                <button type="submit">Submit Message</button>
             </form>
         </div>
     </div>
 
     <footer>
         <div class="links">
-            <a href="index.html">Home</a>
             <a href="privacy.html">Privacy Policy</a>
             <a href="app-ads.txt">Ad Verification</a>
+            <a href="https://github.com/rambodapps">GitHub Profile</a>
         </div>
-        <p style="font-size: 0.8rem; color: #94a3b8; margin-top: 15px;">&copy; 2026 Rambod Financial.</p>
+        <p style="font-size: 0.8rem; color: #94a3b8; margin-top: 20px;">&copy; 2026 Rambod Financial. Built in Ottawa, Canada.</p>
     </footer>
 
 </body>
