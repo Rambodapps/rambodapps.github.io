@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rambod Financial | Smart Utility Apps</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb; /* Professional Blue */
+            --bg: #f8fafc;
+            --text: #1e293b;
+            --card: #ffffff;
+        }
+
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--bg); 
+            color: var(--text); 
+            margin: 0; 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh;
+        }
+
+        .container { max-width: 900px; margin: auto; padding: 40px 20px; flex: 1; }
+
+        header { text-align: center; margin-bottom: 60px; }
+        h1 { font-size: 2.5rem; font-weight: 600; color: var(--primary); margin-bottom: 10px; }
+        .subtitle { font-size: 1.1rem; color: #64748b; }
+
+        .app-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 40px; }
+
+        .card { 
+            background: var(--card); 
+            padding: 30px; 
+            border-radius: 16px; 
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            transition: transform 0.2s ease;
+            border: 1px solid #e2e8f0;
+        }
+        .card:hover { transform: translateY(-5px); border-color: var(--primary); }
+        .card h3 { margin-top: 0; color: var(--primary); }
+        .card p { color: #475569; font-size: 0.95rem; }
+
+        footer { 
+            background: #ffffff; 
+            padding: 30px; 
+            text-align: center; 
+            border-top: 1px solid #e2e8f0;
+            margin-top: 50px;
+        }
+
+        .links a { 
+            color: #64748b; 
+            text-decoration: none; 
+            margin: 0 15px; 
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+        .links a:hover { color: var(--primary); }
+
+        .badge {
+            display: inline-block;
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 4px 12px;
+            border-radius: 99px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Rambod Financial</h1>
+            <p class="subtitle">Precision-engineered financial tools for Canada & USA.</p>
+        </header>
+
+        <div class="app-grid">
+            <div class="card">
+                <span class="badge">Coming Soon</span>
+                <h3>Smart Tax Canada</h3>
+                <p>Calculate your 2026 T1 returns, optimize GST/HST registration, and track business expenses in one secure place.</p>
+            </div>
+
+            <div class="card">
+                <span class="badge">In Development</span>
+                <h3>Mortgage Pro</h3>
+                <p>Advanced Canadian mortgage calculator featuring CMHC insurance logic and semi-annual compounding math.</p>
+            </div>
+
+            <div class="card">
+                <span class="badge">Planning</span>
+                <h3>True-Cost Shopping</h3>
+                <p>Instant unit-price comparisons and sales-tax stacking for smarter grocery shopping in Ottawa and beyond.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="app-ads.txt">Ad Verification</a>
+            <a href="https://github.com/Lerambod">Developer Profile</a>
+        </div>
+        <p style="font-size: 0.8rem; color: #94a3b8; margin-top: 15px;">&copy; 2026 Rambod. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
